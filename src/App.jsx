@@ -124,15 +124,8 @@ const App = () => {
   ];
 
   return (
-    <div style={{ position: "relative" }}>
-      <h1
-        style={{
-          position: "absolute",
-          color: "white",
-        }}
-      >
-        3D Model
-      </h1>
+    <>
+     
       <Canvas camera={{ position: [250, 250, 200], fov: 40 }}>
         <TransformControls mode="translate">
           <directionalLight position={[0, 0, 200]} />
@@ -141,7 +134,7 @@ const App = () => {
           <OrbitControls />
         </TransformControls>
       </Canvas>
-    </div>
+    </>
   );
 };
 
